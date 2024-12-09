@@ -9,5 +9,7 @@ public class Main {
         tabla.Megjelenit();
         System.out.print("A megadott oszlop üres-e? : " + tabla.UresOszlop(2)+"\n");
         System.out.print("A megadott sor üres-e? : " + tabla.UresSor(3));
+
+        new Projektor();
     }
 }
