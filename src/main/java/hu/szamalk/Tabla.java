@@ -38,4 +38,27 @@ public class Tabla {
             System.out.print("\n");
         }
     }
+
+    public boolean UresOszlop(int oszlop){
+        for (int i = 0; i < T.length; i++) {
+            for (int j = 0; j < oszlop; j++) {
+                if(T[i][oszlop] == 'K'){
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+
+    public boolean UresSor(int sor){
+        for (int i = 0; i < sor; i++) {
+            for (int j = 0; j < T[i].length; j++) {
+                if(T[sor][j] == 'K'){
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
 }
